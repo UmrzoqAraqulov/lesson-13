@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 10px skyblue;
+  padding: 10px 0px;
+}
+
+.header__logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header__nav,
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__link {
+  padding: 5px 0px;
+  display: inline-block;
+  border-bottom: 1.5px solid transparent;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.header__link:hover {
+  border-color: skyblue;
+  color: skyblue;
+}
+
+.header__btns {
+  display: none;
+}
+
+.header__btn-toggle {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .header__list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 0px 10px skyblue;
+    transition: 0.4s;
+  }
+
+  .header__btns {
+    display: block;
+  }
+
+  .header__list-show {
+    left: 0;
+  }
+}
+
+.form {
+  padding: 50px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div{
+  display: flex;
+  gap: 20px;
+}
+
+form input{
+  outline: none;
+  padding: 4px 10px;
+  color: red;
+  border: 1.5px solid black;
+  border-radius: 4px;
+}
+
+.subscribe {
+  display: flex;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.subscribe input {
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: red;
+  border: 2px solid black;
+  border-left: none;
+  font-size: 25px;
+  line-height: 30px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+}

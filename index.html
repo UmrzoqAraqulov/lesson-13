@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Lesson-13</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header__nav container">
+      <div class="header__logo">
+        <a href="./index.html">Logo</a>
+      </div>
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+        <li class="header__item"><a href="#" class="header__link">About</a></li>
+        <li class="header__item"><a href="#" class="header__link">Service</a></li>
+        <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+        <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+      </ul>
+      <div class="header__btns">
+        <button class="header__btn-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form container">
+      <form>
+        <fieldset>
+          <legend style="text-align: center;">User</legend>
+          <div>
+            <label for="name">Name</label>
+            <input required placeholder="Umrzoq" value="Alijon" name="name" id="name" type="text" readonly>
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input id="age" type="number">
+          </div>
+          <div><input placeholder="email" type="email" required oninvalid="this.setCustomValidity('email kiriting!')">
+          </div>
+          <div><input type="password"></div>
+          <div>
+            <input type="color">
+          </div>
+          <div>
+            <input type="date">
+          </div>
+          <div>
+            <input type="file">
+          </div>
+          <div>
+            <input type="url" required>
+          </div>
+          <div>
+            <label for="html">Html</label>
+            <input id="html" type="checkbox">
+          </div>
+          <div>
+            <label for="css">css</label>
+            <input id="css" type="checkbox">
+          </div>
+          <div>
+            <label for="js">js</label>
+            <input id="js" type="checkbox">
+          </div>
+          <div>
+            <label for="male">male</label>
+            <input id="male" type="radio" name="gender">
+          </div>
+          <div>
+            <label for="female">female</label>
+            <input id="female" type="radio" name="gender">
+          </div>
+
+          <div>
+            <label for="lang">Language</label>
+            <select name="lang" id="lang">
+              <option value="uzb">uzb</option>
+              <option value="rus">rus</option>
+              <option value="eng">eng</option>
+            </select>
+          </div>
+          <div>
+            <label for="desc">Descreption</label>
+            <textarea name="desc" id="desc"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- <div class="subscribe">
+          <input type="email" />
+          <button>Subscribe</button>
+        </div> -->
+
+        <button>Submit</button>
+      </form>
+    </section>
+  </main>
+
+
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
